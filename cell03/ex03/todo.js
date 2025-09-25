@@ -12,7 +12,7 @@ function deleteList(cookid) {
 }
 
 function addTask() {
-    var data = prompt("จะทำอะไรก็กรอกมา")
+    var data = prompt("กรอก")
     let id = Date.now();
     if (data != '' && data != null) {
         addList(data,id);
@@ -25,7 +25,7 @@ function addList(value, id = "None") {
     var div = document.createElement("div");
     div.appendChild(task); div.id = id;
     if (value === '' && id === 'None') {
-        alert('กรอกกกกกกกกกกกกกกกกกกกกกกกกกกกกกกก');
+        alert('กรอก');
     }
     else {
         list.prepend(div);
