@@ -3,17 +3,145 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rush Project - Home</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>CV Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      padding-top: 60px;
+      background: #f0f9f9;
+      color: #1e293b;
+    }
+    nav {
+      background: #006064;
+      color: white;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      margin-left: 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+      border-radius: 12px;
+      margin-bottom: 30px;
+    }
+    #home {
+      background: linear-gradient(135deg, #00838f, #00acc1);
+      text-align: center;
+      color: white;
+      padding: 100px 20px;
+      border-radius: 12px;
+      margin-bottom: 30px;
+    }
+    #chansavat, #pannawit {
+      background: #e0f7fa;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    #chansavat img, #pannawit img {
+      border-radius: 50%;
+      border: 4px solid #004d40;
+      margin-bottom: 20px;
+      max-width: 180px;
+    }
+    .experience {
+      background: #80deea;
+      padding: 40px 20px;
+      border-radius: 12px;
+      margin-top: 20px;
+    }
+    #contact {
+      background: #4dd0e1;
+      color: #004d40;
+      padding: 60px 20px;
+      border-radius: 12px;
+    }
+    h1, h2, h3 {
+      color: #004d40;
+    }
+    #contact h2 {
+      color: #00251a;
+    }
+    ul li {
+      margin-bottom: 10px;
+    }
+    #contact a {
+      color: #004d40;
+      font-weight: bold;
+    }
+    #contact a:hover {
+      color: #00251a;
+    }
+  </style>
 </head>
-<body class="bg-light">
-  <div class="container text-center mt-5">
-    <h1 class="mb-4">Rush Project Showcase</h1>
-    <p class="lead">Choose a CV to view</p>
-    <div class="d-flex justify-content-center gap-4 mt-4">
-      <a href="cv1.html" class="btn btn-primary btn-lg">CV 1</a>
-      <a href="cv2.html" class="btn btn-success btn-lg">CV 2</a>
+<body>
+  <nav>
+    <div><strong>My CV Portfolio</strong></div>
+    <div>
+      <a href="#home">Home</a>
+      <a href="#chansavat">Chansavat</a>
+      <a href="#pannawit">Pannawit</a>
+      <a href="#contact">Contact</a>
     </div>
-  </div>
+  </nav>
+
+  <!-- หน้าแรก -->
+  <section id="home">
+    <h1>Welcome to My CV Portfolio</h1>
+    <p>Here you can explore the personal CVs of <strong>Chansavat Vachiyanviroch</strong> and <strong>Pannawit Thairungroj</strong>.</p>
+  </section>
+
+  <!-- CV1 -->
+  <section id="chansavat">
+    <img src="https://cdn.discordapp.com/attachments/1419592514058584086/1420325567466835988/1758702397158.jpg?ex=68d5a583&is=68d45403&hm=176f9a76017948a1bfcc4d40e76ada0c8333909ca3434ccf9cc6b9fe2eb9aef4&" alt="Chansavat Photo">
+    <h1>Chansavat Vachiyanviroch</h1>
+    <h3>KMITL Business School</h3>
+    <div class="experience">
+      <h2>Experience & Skills</h2>
+      <p>I am good at calculations and enjoy playing basketball.</p>
+    </div>
+    <p><a href="#home">⬅ Back to Home</a></p>
+  </section>
+
+  <!-- CV2 -->
+  <section id="pannawit">
+    <img src="https://cdn.discordapp.com/attachments/1419592514058584086/1420333452963610714/IMG_0107.jpg?ex=68d5acdb&is=68d45b5b&hm=0cf5b9c22196cf2cf605b249291e8891ac7d0c30e9922edfb3cdc4c061d9f944&" alt="Pannawit Photo">
+    <h1>Pannawit Thairungroj</h1>
+    <h3>KMITL Business School</h3>
+    <div class="experience">
+      <h2>Experience & Skills</h2>
+      <p>I have language skills, excel at sports, exercise regularly, often find time to earn income, and can cook.</p>
+    </div>
+    <p><a href="#home">⬅ Back to Home</a></p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <ul>
+      <li>Email (Chansavat): 68100036@kmitl.ac.th</li>
+      <li>Instagram (Chansavat): <a href="https://www.instagram.com/preminwgod?igsh=MWhpNDUxZXVxZHRxcQ==" target="_blank">instagram.com/preminwgod</a></li>
+      <li>Email (Pannawit): 68100091@kmitl.ac.th</li>
+      <li>Instagram (Pannawit): <a href="https://www.instagram.com/title.xyz?utm_source=qr&igsh=MXh5aGI0YXg0MXY0bQ==" target="_blank">instagram.com/title.xyz</a></li>
+    </ul>
+    <p><a href="#home">⬅ Back to Home</a></p>
+  </section>
 </body>
 </html>
